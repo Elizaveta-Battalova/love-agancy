@@ -9,7 +9,7 @@ body {
 }
 
 body {
-    background-image: url("./images/bg-light-4857.png");
+    background-image: url("./images/bg-light-4869.png");
 }
 
 a {
@@ -175,5 +175,11 @@ footer {
     .logo {
         width: 80px;
         box-shadow: none;
+    }
+    label.click {
+        width: 30px;
+        height: 30px;
+        top: 80%;
+        left: 90%;
     }
 }
