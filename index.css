@@ -162,9 +162,16 @@ footer {
 }
 
 @media(max-width:1200px) {
+    #click:checked~ul li a.facebook {
+        top: 83%;
+        left: 84%;
+    }
+}
+
+@media(max-width:992px) {
     #click:checked~ul li a.twitter {
         top: 74%;
-        left: 87%;
+        left: 86%;
     }
 }
 
@@ -190,6 +197,21 @@ footer {
     #click:checked~ul li a.twitter {
         top: 73%;
         left: 78%;
+    }
+    #click:checked~ul li a.instagram {
+        top: 70%;
+        left: 85%;
+    }
+}
+
+@media(max-width:576px) {
+    #click:checked~ul li a.facebook {
+        top: 83%;
+        left: 68%;
+    }
+    #click:checked~ul li a.twitter {
+        top: 74%;
+        left: 74%;
     }
     #click:checked~ul li a.instagram {
         top: 70%;
