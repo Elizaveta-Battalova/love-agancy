@@ -303,3 +303,29 @@ footer {
         width: 100%;
     }
 }
+
+@media(max-width:768px) {
+    .logo {
+        width: 80px;
+        box-shadow: none;
+    }
+    ul li a {
+        left: 80%;
+    }
+    label.click {
+        top: 80%;
+        left: 80%;
+    }
+    #click:checked~ul li a.facebook {
+        top: 83%;
+        left: 72%;
+    }
+    #click:checked~ul li a.twitter {
+        top: 73%;
+        left: 78%;
+    }
+    #click:checked~ul li a.instagram {
+        top: 70%;
+        left: 85%;
+    }
+}
