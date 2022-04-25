@@ -191,14 +191,14 @@ footer {
         left: 86%;
     }
     img {
-        width: 400px;
+        width: 300px;
     }
 }
 
 @media(max-width:768px) {
-    /* img {
-        width: 80%;
-    } */
+    img {
+        width: 250px;
+    }
     .logo {
         width: 80px;
         box-shadow: none;
