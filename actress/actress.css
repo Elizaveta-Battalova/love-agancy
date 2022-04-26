@@ -8,10 +8,6 @@ body {
     height: 100%;
 }
 
-body {
-    background-image: url("../images/bg-light-4869.png");
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -30,12 +26,23 @@ a {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
+.test {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info {
+    width: 40%;
+    padding-top: 50px;
+}
+
 header {
-    background: linear-gradient(rgba(143, 193, 204, 0.8), rgb(255, 255, 255, 0.1));
+    background-color: rgb(28, 28, 28, 0.9);
 }
 
 .logo {
@@ -54,7 +61,7 @@ nav {
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 .carousel {
@@ -66,8 +73,7 @@ main {
 .icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 50%;
+    justify-content: space-around;
 }
 
 .icons img {
@@ -208,10 +214,31 @@ label.click {
     cursor: pointer
 }
 
-a,
-a:hover {
-    text-decoration: none;
-    color: #fff
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.links a {
+    border-bottom: 2px black solid;
+}
+
+.about-actress-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.right {
+    width: 40%;
+}
+
+.right video {
+    width: 100%;
 }
 
 ul {
@@ -327,5 +354,15 @@ footer {
     #click:checked~ul li a.instagram {
         top: 70%;
         left: 85%;
+    }
+    .test {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-actress-block {
+        display: none;
+    }
+    .info {
+        width: 100%;
     }
 }
