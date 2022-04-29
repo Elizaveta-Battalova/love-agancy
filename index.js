@@ -1,55 +1,25 @@
-const dropdowns = Array.from(document.querySelectorAll('.dropdown'));
-dropdowns.forEach(dropdown => {
-    const btn = dropdown.querySelector('.dropdown-btn');
-    const menu = dropdown.querySelector('.dropdown-menu');
+var hamMenu = document.querySelector('.ham-menu');
+var dropMenu = document.querySelector('.drop-menu');
+var dropMenuList = document.querySelectorAll('.drop-menu div');
+var dropMenuListText = document.querySelectorAll('.drop-menu div a');
 
-    document.addEventListener('click', (e) => {
-        if (!dropdown.contains(e.target)) {
-            menu.dataset.expanded = "false";
-        }
+hamMenu.addEventListener('click', () => {
+    dropMenu.classList.toggle('drop-down');
+    hamMenu.children[0].classList.toggle('top');
+    hamMenu.children[1].classList.toggle('mid');
+    hamMenu.children[2].classList.toggle('bottom');
+})
+
+dropMenuList.forEach(li => {
+
+    li.addEventListener('mouseover', (e) => {
+        li.style.backgroundImage = "linear-gradient(to right,#EBF5F8,#58A29F)";
+        li.children[0].style.color = "white";
     })
 
-    btn.addEventListener('click', (e) => {
-        if (menu.dataset.expanded === "true") {
-            menu.dataset.expanded = "false";
-        } else {
-            menu.dataset.expanded = "true";
-        }
-    });
-});
+    li.addEventListener('mouseleave', (e) => {
+        li.style.backgroundImage = "linear-gradient(to right,#EBF5F8,#EBF5F8)";
+        li.children[0].style.color = "#58A29F";
+    })
 
-$(document).ready(function() {
-    $('#biografy-btn').click(function() {
-        $('#sidebar-biography').toggleClass('visible');
-    });
-});
-
-$(document).ready(function() {
-    $('#biography-sidebar-btn').click(function() {
-        $('#sidebar-biography').toggleClass('visible');
-    });
-});
-
-
-$(document).ready(function() {
-    $('#filmography-btn').click(function() {
-        $('#sidebar-filmography').toggleClass('visible');
-    });
-});
-$(document).ready(function() {
-    $('#filmography-sidebar-btn').click(function() {
-        $('#sidebar-filmography').toggleClass('visible');
-    });
-});
-
-
-$(document).ready(function() {
-    $('#video-btn').click(function() {
-        $('#sidebar-video').toggleClass('visible');
-    });
-});
-$(document).ready(function() {
-    $('#video-sidebar-btn').click(function() {
-        $('#sidebar-video').toggleClass('visible');
-    });
-});
+})

@@ -5,64 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>agancy</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="content">
-            <header>
-                <div class="container">
-                    <nav>
-                        <img class="logo" src="./images/logo.png" alt="">
-                        <a href="#">about agancy</a>
-                    </nav>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+        <header>
+            <div class="nav">
+                <div class="title">
+                    <a href="index.html"><img src="./images/logo.jpeg" alt="logo"></a>
                 </div>
-            </header>
-
-            <div class="container">
-                <div class="box">
-                    <a href="./actress/actress.html"><img src="./images/лаврухина.jpg" alt=""></a>
-                    <a href="./actress/actress.html"><img src="./images/борисевич.jpeg" alt=""></a>
-                    <a href="./actress/actress.html"><img src="./images/пискунова.jpg" alt=""></a>
-                    <a href="./actress/actress.html"><img src="./images/померанцева.jpg" alt=""></a>
-                </div>
-
-                <div class="box">
-                    <a href="./actress/actress.html"><img src="./images/тюкова.jpg" alt=""></a>
-                    <a href="./actress/actress.html"><img src="./images/воеводова.jpg" alt=""></a>
-                    <a href="./actress/actress.html"><img src="./images/лаврухина1.jpg" alt=""></a>
-                    <a href="./actress/actress.html"><img src="./images/жуля.jpg" alt=""></a>
-                </div>
-            </div>
-
-            <div class="share">
-                <input type="checkbox" id="click" name="share">
-                <label for="click" class="click"><i class="fa fa-volume-control-phone"></i></label>
-
                 <ul>
-                    <li><a href="#" class="facebook" title="facebook"><i class="fa fa-phone"></i></a></li>
-                    <li><a href="#" class="twitter" title="twitter"><i class="fa fa-envelope-o"></i></a></li>
-                    <li><a href="#" class="instagram" title="instagram"><i class="fa fa-reply"></i></a></li>
+                    <li><a href="./actress/actress.html">актрисы</a></li>
+                    <li><a href="./actor/actor.html">актеры</a></li>
+                    <li><a href="">о нас</a></li>
+                    <li><a href="">контакты</a></li>
                 </ul>
+                <div class="ham-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <div class="drop-menu">
+            <div><a href="./actress/actress.html">актрисы</a></div>
+            <div><a href="./actor/actor.html">актеры</a></div>
+            <div><a href="">о нас</a></div>
+            <div><a href="">контакты</a></div>
+        </div>
 
+        <main>
+            <div class="img_block">
+                <a href="./actor/actor.html" class="content_block"><img src="./images/actor.jpg" />
+                    <div class="over_block"></div>
+                    <span>актеры</span>
+                </a>
             </div>
 
+            <div class="img_block">
+                <a href="./actress/actress.html" class="content_block"><img src="./images/лаврухина.jpg" />
+                    <div class="over_block"></div>
+                    <span>актрисы</span>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                tel:+1234567899
+            </div>
+        </footer>
+        <script src="index.js"></script>
 
-
-        </div>
-        <div class="footer">
-            <footer>
-                <div class="container">
-                    <p>tel : 1234556789</p>
-                </div>
-            </footer>
-        </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="index.js"></script>
 </body>
 
 </html>

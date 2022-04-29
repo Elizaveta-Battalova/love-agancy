@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    transition: .5s;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.test {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info {
+    width: 40%;
+    padding-top: 50px;
+}
+
+header {
+    background-color: rgb(28, 28, 28, 0.9);
+}
+
+.logo {
+    width: 100px;
+    box-shadow: none;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.carousel {
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icons img {
+    cursor: pointer;
+}
+
+video {
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+.biography {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#sidebar-biography {
+    background: linear-gradient(rgba(143, 193, 204, 0.9), rgb(255, 255, 255, 0.9));
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    transition: left 0.3s linear;
+    z-index: 99999;
+}
+
+#sidebar-biography.visible {
+    left: 0px;
+    transition: left 0.3s linear;
+}
+
+.sidebar-biography-btn {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.filmography {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#sidebar-filmography {
+    background: linear-gradient(rgba(143, 193, 204, 0.9), rgb(255, 255, 255, 0.9));
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    transition: left 0.3s linear;
+    z-index: 99999;
+}
+
+#sidebar-filmography.visible {
+    left: 0px;
+    transition: left 0.3s linear;
+}
+
+.sidebar-filmography-btn {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.video {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#sidebar-video {
+    background: linear-gradient(rgba(143, 193, 204), rgb(255, 255, 255, 0.9));
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    transition: left 0.3s linear;
+    z-index: 99999;
+}
+
+#sidebar-video.visible {
+    left: 0px;
+    transition: left 0.3s linear;
+}
+
+.sidebar-video-btn {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+
+strong {
+    text-transform: uppercase;
+    color: #373535
+}
+
+input {
+    display: none
+}
+
+div.share {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+}
+
+label.click {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 60px;
+    background: rgb(132, 198, 190);
+    box-shadow: 0px 2px 5px 0px rgb(91, 91, 91);
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    z-index: 1;
+    cursor: pointer
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.links a {
+    border-bottom: 2px black solid;
+}
+
+.about-actress-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.right {
+    width: 40%;
+}
+
+.right video {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+ul li a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    background: lightblue;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+#click:checked~ul li a {
+    opacity: 1
+}
+
+#click:checked~ul li a.facebook {
+    background: rgb(125, 153, 150);
+    position: fixed;
+    top: 83%;
+    left: 86%;
+}
+
+#click:checked~ul li a.twitter {
+    background: rgb(127, 171, 166);
+    position: fixed;
+    top: 73%;
+    left: 88%;
+}
+
+#click:checked~ul li a.instagram {
+    background: rgb(132, 198, 190);
+    position: fixed;
+    top: 70%;
+    left: 92%;
+}
+
+.footer {
+    flex: 0 0 auto;
+    margin-top: 50px;
+}
+
+footer {
+    height: 100px;
+    background: linear-gradient(rgb(255, 255, 255, 0.1), rgba(143, 193, 204, 0.8));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.biografy-btn {
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 36px;
+    border-radius: 50%;
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width:992px) {
+    .logo {
+        width: 80px;
+        box-shadow: none;
+    }
+    .carousel {
+        width: 100%;
+    }
+    video {
+        width: 100%;
+    }
+    .icons {
+        width: 100%;
+    }
+}
+
+@media(max-width:768px) {
+    .logo {
+        width: 80px;
+        box-shadow: none;
+    }
+    ul li a {
+        left: 80%;
+    }
+    label.click {
+        top: 80%;
+        left: 80%;
+    }
+    #click:checked~ul li a.facebook {
+        top: 83%;
+        left: 72%;
+    }
+    #click:checked~ul li a.twitter {
+        top: 73%;
+        left: 78%;
+    }
+    #click:checked~ul li a.instagram {
+        top: 70%;
+        left: 85%;
+    }
+    .test {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-actress-block {
+        display: none;
+    }
+    .info {
+        width: 100%;
+    }
+}
