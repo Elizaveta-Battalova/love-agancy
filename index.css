@@ -20,12 +20,12 @@ body {
 
 header {
     background-color: #58A29F;
-    background-color: rgb(28, 28, 28, 0.9);
+    background-color: rgb(28, 28, 28);
     width: 100%;
 }
 
 .title img {
-    width: 80px;
+    width: 100px;
 }
 
 .nav {
@@ -48,7 +48,7 @@ header {
     height: 5px;
     width: 30px;
     margin: 5px 0;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     transition: 1s ease;
 }
 
@@ -168,6 +168,22 @@ img {
     height: 60px;
     color: #ffffff;
 }
+a[href^="tel:"] {
+	color: #000;
+	font-size: 16px;
+	font-weight: 900;
+}
+.phone{
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}
+.phone img{
+    width: 30px;
+    margin: 10px;
+}
 
 footer {
     flex: 0 0 auto;
@@ -186,6 +202,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
 @media (max-width: 992px) {
@@ -202,13 +219,13 @@ footer {
         margin-bottom: 50px;
     }
     .title img {
-        width: 150px;
+        width: 80px;
     }
     img {
-        width: 250px;
+        width: 150px;
     }
     .img_block {
-        width: 250px;
+        width: 150px;
     }
     .title {
         letter-spacing: 2px;
@@ -267,7 +284,7 @@ footer {
     }
     .drop-menu div {
         width: 100%;
-        background-color: #EBF5F8;
+        background-color: #9f9f9f;
         text-align: right;
         padding: 10px 20px;
         transition: 0.5s ease;
@@ -275,24 +292,11 @@ footer {
         letter-spacing: 2px;
     }
     .drop-menu div a {
-        color: #58A29F;
+        color: #ffffff;
         transition: 0.5s ease;
+    }
+    .footer{
+        font-size: 10px;
     }
 }
 
-@media (max-width:450px) {
-    .nav {
-        width: 90%
-    }
-    .ham-menu div {
-        height: 4px;
-        width: 23px;
-        background-color: black;
-        margin: 3px 0;
-    }
-    .title {
-        letter-spacing: 2px;
-        word-spacing: 2px;
-        font-size: 0.8em;
-    }
-}
