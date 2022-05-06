@@ -142,6 +142,7 @@ h2{
 .biography {
     text-align: center;
     font-size: 15px;
+
 }
 
 #sidebar-biography {
@@ -154,7 +155,7 @@ h2{
     top: 0px;
     transition: left 0.3s linear;
     z-index: 99999;
-   
+    overflow: scroll;
 }
 
 #sidebar-biography.visible {
@@ -198,6 +199,7 @@ width: 50px;
     top: 0px;
     transition: left 0.3s linear;
     z-index: 99999;
+    overflow: scroll;
 }
 
 #sidebar-filmography.visible {
@@ -228,6 +230,7 @@ width: 50px;
     top: 0px;
     transition: left 0.3s linear;
     z-index: 99999;
+    overflow: scroll;
 }
 
 #sidebar-video.visible {

@@ -113,7 +113,7 @@ ul {
     top: 0px;
     transition: left 0.3s linear;
     z-index: 99999;
-   
+    overflow: scroll;
 }
 
 #sidebar-biography.visible {
@@ -155,6 +155,7 @@ ul {
     top: 0px;
     transition: left 0.3s linear;
     z-index: 99999;
+    overflow: scroll;
 }
 
 #sidebar-filmography.visible {
@@ -183,6 +184,7 @@ ul {
     top: 0px;
     transition: left 0.3s linear;
     z-index: 99999;
+    overflow: scroll;
 }
 
 #sidebar-video.visible {
