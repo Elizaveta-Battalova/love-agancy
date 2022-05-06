@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.test {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info {
+    width: 40%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(65, 65, 65);
+}
+
+.title img {
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+.nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ham-menu {
+    display: none;
+  }
+  
+  .drop-menu {
+    display: none;
+  }
+  
+  .ham-menu div {
+    height: 5px;
+    width: 30px;
+    margin: 5px 0;
+    background-color: rgb(255, 255, 255);
+    transition: 1s ease;
+  }
+  
+  .ham-menu .top {
+    transform: rotateZ(410deg) translate(-5%, 100%);
+    margin: 0;
+    transition: 1s ease;
+  }
+  
+  .ham-menu .bottom {
+    transform: rotateZ(-410deg) translate(-5%, -100%);
+    margin: 0;
+    transition: 1s ease;
+  }
+  
+  .ham-menu .mid {
+    transform: rotateZ(360deg);
+    display: none;
+    transition: 1s ease;
+  }
+  
+  .title {
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+  ul {
+    display: flex;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  a:hover {
+    color: black;
+  }
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel {
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icons img {
+    cursor: pointer;
+}
+
+video {
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+ul {
+    text-align: start;
+}
+h2{
+    margin-top: 30px;
+}
+
+.biography {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#sidebar-biography {
+    background: linear-gradient(rgb(28, 28, 28), rgb(255, 255, 255, 0.9));
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    transition: left 0.3s linear;
+    z-index: 99999;
+   
+}
+
+#sidebar-biography.visible {
+    left: 0px;
+    transition: left 0.3s linear;
+}
+
+.sidebar-biography-btn {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.biografy-btn {
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 36px;
+    border-radius: 50%;
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+    color: white;
+    cursor: pointer;
+}
+
+.filmography {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#sidebar-filmography {
+    background: linear-gradient(rgb(28, 28, 28), rgb(255, 255, 255, 0.9));
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    transition: left 0.3s linear;
+    z-index: 99999;
+}
+
+#sidebar-filmography.visible {
+    left: 0px;
+    transition: left 0.3s linear;
+}
+
+.sidebar-filmography-btn {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.video {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#sidebar-video {
+    background: linear-gradient(rgb(28, 28, 28), rgb(255, 255, 255, 0.9));
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    transition: left 0.3s linear;
+    z-index: 99999;
+}
+
+#sidebar-video.visible {
+    left: 0px;
+    transition: left 0.3s linear;
+}
+
+.sidebar-video-btn {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+
+
+
+.about-actress-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.right {
+    width: 40%;
+}
+
+.right video {
+    width: 100%;
+}
+
+footer {
+    flex: 0 0 auto;
+    background-color: rgb(28, 28, 28, 0.9);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .footer {
+    font-size: 15px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  .footer p{
+    padding-bottom: 10px;
+  }
+
+
+@media(max-width:992px) {
+    .logo {
+        width: 80px;
+        box-shadow: none;
+    }
+    .carousel {
+        width: 100%;
+    }
+    video {
+        width: 100%;
+    }
+    .icons {
+        width: 100%;
+    }
+}
+
+@media(max-width:768px) {
+main{
+    margin-top: -150px;
+}
+    .logo {
+        width: 80px;
+        box-shadow: none;
+    }
+    .info{
+        width: 100%;
+    }
+   
+    .test {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-actress-block {
+        display: none;
+    }
+
+    nav {
+        display: none;
+      }
+    .ham-menu {
+        display: block;
+      }
+      .drop-menu {
+        position: relative;
+        z-index: -1;
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        transition: 1s cubic-bezier(0.9, -0.14, 0, 1.15);
+        transform: translateY(-100%);
+        list-style-position: inside;
+      }
+      .drop-down {
+        transform: translateY(0%);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+        z-index: 9;
+      }
+      .drop-menu div {
+        width: 100%;
+        background-color: #9f9f9f;
+        text-align: right;
+        padding: 10px 20px;
+        transition: 0.5s ease;
+        border: none;
+        letter-spacing: 2px;
+      }
+      .drop-menu div a {
+        color: #ffffff;
+        transition: 0.5s ease;
+      }
+}
