@@ -260,6 +260,7 @@ h2 {
 }
 iframe {
   max-width: 100%;
+  margin-bottom: 20px;
 }
 
 footer {
