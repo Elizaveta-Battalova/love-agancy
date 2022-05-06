@@ -57,3 +57,10 @@ $(document).ready(function() {
         $('#sidebar-video').toggleClass('visible');
     });
 });
+
+$(window).resize (function () {
+    $("iframe").each(function() {
+    var width = $(this).width ();
+    $(this).css("height", width / 1.7777 + "px");
+    });
+   });

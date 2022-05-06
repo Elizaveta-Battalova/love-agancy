@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -46,7 +46,7 @@ header {
   }
 
 .nav {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -255,13 +255,12 @@ width: 50px;
     margin-top: 50px;
 }
 
-.right {
-    width: 40%;
+.left {
+    width: 50%;
 }
-
-.right video {
-    width: 100%;
-}
+iframe {
+    max-width: 100%;
+   }
 
 footer {
     flex: 0 0 auto;
@@ -273,7 +272,7 @@ footer {
   
   .footer {
     font-size: 15px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -292,11 +291,11 @@ footer {
     .carousel {
         width: 100%;
     }
-    video {
-        width: 100%;
-    }
     .icons {
         width: 100%;
+    }
+    .left {
+        width: 40%;
     }
 }
 
