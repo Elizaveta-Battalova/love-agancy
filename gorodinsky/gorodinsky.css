@@ -298,6 +298,9 @@ footer {
 }
 
 @media(max-width:768px) {
+    nav {
+        display: none;
+      }
 main{
     margin-top: -150px;
 }
@@ -317,9 +320,7 @@ main{
         display: none;
     }
 
-    nav {
-        display: none;
-      }
+
     .ham-menu {
         display: block;
       }
