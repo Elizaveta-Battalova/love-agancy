@@ -141,7 +141,6 @@ h2{
 
 .biography {
     text-align: center;
-    margin-top: 50px;
     font-size: 15px;
 }
 
@@ -187,7 +186,6 @@ width: 50px;
 
 .filmography {
     text-align: center;
-    margin-top: 50px;
 }
 
 #sidebar-filmography {
@@ -212,10 +210,12 @@ width: 50px;
     justify-content: end;
     cursor: pointer;
 }
+.sidebar-filmography-btn img{
+    width: 50px;
+    }
 
 .video {
     text-align: center;
-    margin-top: 50px;
 }
 
 #sidebar-video {
@@ -240,7 +240,9 @@ width: 50px;
     justify-content: end;
     cursor: pointer;
 }
-
+.sidebar-video-btn img{
+    width: 50px;
+    }
 
 
 .about-actress-block {
