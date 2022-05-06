@@ -36,7 +36,11 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
+nav{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
 .image {
   position: relative;
   text-align: center;

@@ -52,6 +52,11 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+nav{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
 .ham-menu {
   display: none;
 }
@@ -100,17 +105,33 @@ li {
 
 a {
   color: white;
+  text-decoration: none;
 }
 
 a:hover {
   color: black;
+}
+.links a{
+  color: black;
+  text-decoration: underline;
+}
+.links{
+margin-top: 30px;
+width: 100%;
+display: flex;
+justify-content: space-between;
 }
 
 main {
   display: flex;
   flex-direction: column;
 }
-
+h1{
+  font-weight: bold;
+  }
+  h2{
+      font-family: 'Pacifico';
+  }
 .carousel {
   width: 50%;
   margin-top: 50px;
@@ -130,10 +151,6 @@ main {
 video {
   width: 50%;
   margin-bottom: 50px;
-}
-
-ul {
-  text-align: start;
 }
 h2 {
   margin-top: 30px;
@@ -254,10 +271,6 @@ h2 {
   justify-content: space-between;
   margin-top: 50px;
 }
-
-.left {
-  width: 50%;
-}
 iframe {
   max-width: 100%;
   margin-bottom: 20px;
@@ -327,7 +340,7 @@ footer {
   }
   .drop-menu {
     position: relative;
-    z-index: -1;
+    z-index: -20;
     display: flex;
     flex-direction: column;
     background-color: red;
