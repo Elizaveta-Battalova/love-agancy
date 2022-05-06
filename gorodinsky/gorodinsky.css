@@ -142,6 +142,7 @@ h2{
 .biography {
     text-align: center;
     margin-top: 50px;
+    font-size: 15px;
 }
 
 #sidebar-biography {
@@ -166,6 +167,9 @@ h2{
     display: flex;
     justify-content: end;
     cursor: pointer;
+}
+.sidebar-biography-btn img{
+width: 50px;
 }
 
 .biografy-btn {
