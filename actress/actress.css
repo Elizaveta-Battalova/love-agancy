@@ -29,7 +29,7 @@ header {
 }
 
 .nav {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -44,12 +44,14 @@ header {
 
 .image img {
   width: 380px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  transition: .5s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: 0.5s;
 }
-.image img:hover{
-    box-shadow: rgba(0, 0, 0, 0.7) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
+.image img:hover {
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
 
 h2 {
   position: absolute;
@@ -60,7 +62,6 @@ h2 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
 
 .ham-menu {
   display: none;
@@ -136,13 +137,13 @@ footer {
 
 .footer {
   font-size: 15px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   color: white;
 }
-.footer p{
+.footer p {
   padding-bottom: 10px;
 }
 @media (max-width: 1200px) {
@@ -162,9 +163,9 @@ footer {
   .title img {
     width: 80px;
   }
-main{
-  justify-content: space-around;
-}
+  main {
+    justify-content: space-around;
+  }
 
   .title {
     letter-spacing: 2px;
@@ -201,7 +202,7 @@ main{
   .image img {
     width: 230px;
   }
-  .image{
+  .image {
     margin-bottom: 50px;
   }
   h2 {
@@ -247,7 +248,7 @@ main{
     font-size: 10px;
   }
 }
-@media(max-width:576px){
+@media (max-width: 576px) {
   .image img {
     width: 350px;
   }
