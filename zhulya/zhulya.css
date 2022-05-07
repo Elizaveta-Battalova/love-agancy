@@ -271,12 +271,12 @@ h2 {
   justify-content: space-between;
   margin-top: 50px;
 }
+.left {
+  width: 50%;
+}
 iframe {
   max-width: 100%;
   margin-bottom: 20px;
-}
-.left {
-  width: 50%;
 }
 
 footer {
