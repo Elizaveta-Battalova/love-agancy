@@ -7,9 +7,14 @@
 }
 
 body {
-  height: 100vh;
   width: 100%;
-  background-color: #646464;
+  font-family: "Merriweather", serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/wallpepper.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .wrapper {
@@ -47,18 +52,18 @@ main {
 .image {
   position: relative;
   text-align: center;
-  border: 5px solid rgb(255, 255, 255, 0.9);
   margin: 20px;
 }
 
 .image img {
   width: 350px;
-  box-shadow: rgba(0, 0, 0) 0px 14px 28px, rgba(0, 0, 0) 0px 10px 10px;
+  box-shadow: rgb(62, 62, 62, 0.7) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
   transition: 0.5s;
 }
 .image img:hover {
-  box-shadow: rgba(0, 0, 0, 0.7) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 14px 28px,
+    rgba(0, 255, 255, 0.22) 0px 10px 10px;
 }
 
 h2 {
