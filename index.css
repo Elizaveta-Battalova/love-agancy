@@ -208,16 +208,15 @@ footer {
   }
 
   main {
-    margin-top: -150px;
+    margin-top: -175px;
     flex-direction: column;
   }
   .quote {
     width: 100%;
     margin-bottom: 30px;
-    text-align: center;
   }
   h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .image img {
     width: 350px;
