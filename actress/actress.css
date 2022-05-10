@@ -10,7 +10,7 @@ body {
   width: 100%;
   font-family: "Merriweather", serif;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/wallpepper.jpg");
+    url("../images/new-wallpepper.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -26,7 +26,18 @@ body {
 header {
   width: 100%;
 }
-
+.title {
+  color: white;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+.title p {
+  font-size: 15px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
 .title img {
   width: 100px;
   margin-top: 10px;
@@ -100,11 +111,6 @@ h2 {
   transform: rotateZ(360deg);
   display: none;
   transition: 1s ease;
-}
-
-.title {
-  letter-spacing: 2px;
-  word-spacing: 2px;
 }
 
 ul {
