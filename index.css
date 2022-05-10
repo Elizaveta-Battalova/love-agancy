@@ -7,9 +7,14 @@
 }
 
 body {
-  height: 100vh;
   width: 100%;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./images/wallpepper.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .wrapper {
@@ -19,7 +24,6 @@ body {
 }
 
 header {
-  background-color: rgb(65, 65, 65);
   width: 100%;
 }
 
@@ -36,10 +40,26 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-nav{
+nav {
   width: 30%;
   display: flex;
   justify-content: space-between;
+}
+main {
+  flex: 1 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 8%;
+}
+.quote {
+  width: 30%;
+}
+h1 {
+  color: aqua;
+  text-transform: uppercase;
+  font-size: 40px;
 }
 .image {
   position: relative;
@@ -48,12 +68,14 @@ nav{
 
 .image img {
   width: 400px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  transition: .5s;
+  box-shadow: rgb(62, 62, 62, 0.7) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: 0.5s;
 }
-.image img:hover{
-    box-shadow: rgba(0, 0, 0, 0.7) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
+.image img:hover {
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 14px 28px,
+    rgba(0, 255, 255, 0.22) 0px 10px 10px;
+}
 
 h2 {
   position: absolute;
@@ -64,7 +86,6 @@ h2 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
 
 .ham-menu {
   display: none;
@@ -114,25 +135,15 @@ li {
 }
 
 a {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 a:hover {
   color: black;
 }
 
-main {
-  flex: 1 0 auto;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 50px 8%;
-}
-
 footer {
   flex: 0 0 auto;
-  background-color: rgb(28, 28, 28, 0.9);
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -146,7 +157,7 @@ footer {
   flex-direction: column;
   color: white;
 }
-.footer p{
+.footer p {
   padding-bottom: 10px;
 }
 
@@ -175,6 +186,7 @@ footer {
 
 @media (max-width: 768px) {
   header {
+    background-color: rgb(65, 65, 65);
     z-index: 999;
   }
   nav {
@@ -185,10 +197,17 @@ footer {
     margin-top: -150px;
     flex-direction: column;
   }
+  .quote {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  h1 {
+    font-size: 30px;
+  }
   .image img {
     width: 350px;
   }
-  .image{
+  .image {
     margin-bottom: 50px;
   }
   h2 {
