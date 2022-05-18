@@ -115,16 +115,10 @@ a {
 a:hover {
   color: aqua;
 }
-.am-wrapper {
-  float: left;
-  position: relative;
-  overflow: hidden;
-}
-.am-wrapper img {
-  position: absolute;
-  outline: none;
-}
 
+.am-container img {
+  width: 200px;
+}
 footer {
   flex: 0 0 auto;
   width: 100%;
@@ -193,6 +187,9 @@ footer {
   main {
     margin-top: -175px;
     flex-direction: column;
+  }
+  .am-container {
+    text-align: center;
   }
   .quote {
     width: 100%;
