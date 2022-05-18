@@ -144,6 +144,9 @@ footer {
   h1 {
     font-size: 30px;
   }
+  .am-container {
+    text-align: center;
+  }
 }
 
 @media (max-width: 992px) {
@@ -188,9 +191,7 @@ footer {
     margin-top: -175px;
     flex-direction: column;
   }
-  .am-container {
-    text-align: center;
-  }
+
   .quote {
     width: 100%;
     margin-bottom: 30px;
