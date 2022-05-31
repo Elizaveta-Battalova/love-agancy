@@ -51,6 +51,11 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
 
 .image {
   position: relative;
@@ -140,7 +145,10 @@ main {
   padding: 50px 8%;
   flex-wrap: wrap;
 }
-
+.phone {
+  display: flex;
+  flex-direction: row;
+}
 footer {
   flex: 0 0 auto;
   width: 100%;
@@ -175,9 +183,6 @@ footer {
 
   .title img {
     width: 80px;
-  }
-  main {
-    justify-content: space-around;
   }
 
   .title {
@@ -265,5 +270,8 @@ footer {
 @media (max-width: 576px) {
   .image img {
     width: 350px;
+  }
+  main {
+    justify-content: space-around;
   }
 }

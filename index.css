@@ -147,6 +147,10 @@ a {
 a:hover {
   color: aqua;
 }
+.phone {
+  display: flex;
+  flex-direction: row;
+}
 
 footer {
   flex: 0 0 auto;

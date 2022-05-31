@@ -54,3 +54,7 @@ var nodeBounder = function (node) {
     };
   };
 };
+
+$('[data-fancybox="images"]').fancybox({
+  buttons: ["download", "thumbs", "close"],
+});

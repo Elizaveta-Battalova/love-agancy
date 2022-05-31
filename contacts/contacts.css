@@ -61,9 +61,40 @@ main {
   flex: 1 0 auto;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   padding: 50px 8%;
+}
+
+h1 {
+  color: aqua;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.image {
+  position: relative;
+  text-align: center;
+  background-color: aqua;
+}
+
+.image img {
+  width: 400px;
+  transition: 0.5s;
+}
+.image img:hover {
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 14px 28px,
+    rgba(0, 255, 255, 0.22) 0px 10px 10px;
+}
+
+h2 {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgb(28, 28, 28, 0.7);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .ham-menu {
@@ -115,16 +146,7 @@ a {
 a:hover {
   color: aqua;
 }
-.am-container {
-  text-align: center;
-}
-.am-container img {
-  width: 200px;
-}
-.phone {
-  display: flex;
-  flex-direction: row;
-}
+
 footer {
   flex: 0 0 auto;
   width: 100%;
@@ -149,9 +171,6 @@ footer {
   }
   h1 {
     font-size: 30px;
-  }
-  .am-container {
-    text-align: center;
   }
 }
 
@@ -194,10 +213,8 @@ footer {
   }
 
   main {
-    margin-top: -175px;
     flex-direction: column;
   }
-
   .quote {
     width: 100%;
     margin-bottom: 30px;
